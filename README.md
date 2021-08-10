@@ -10,8 +10,8 @@ npm install @alipay-applets-request
 // 按需导入 $http 对象 在支付宝小程序的app.js文件中引入
 import { $http } from '@alipay-applets-request'
 
-// 将按需导入的 $http 挂载到 wx 顶级对象之上，方便全局调用
-wx.$http = $http
+// 将按需导入的 $http 挂载到 al 顶级对象之上，方便全局调用
+al.$http = $http
 
 ```
 
@@ -27,16 +27,16 @@ wx.$http = $http
 
 ```js
 // 发起 GET 请求，data 是可选的参数对象 可以使用es6解构赋值
-const { data:res } = wx.$http.get(url, data?)
+const { data:res } = al.$http.get(url, data?)
 
 // 发起 POST 请求，data 是可选的参数对象
-const { data:res } = wx.$http.post(url, data?)
+const { data:res } = al.$http.post(url, data?)
 
 // 发起 PUT 请求，data 是可选的参数对象
-const { data:res } = wx.$http.put(url, data?)
+const { data:res } = al.$http.put(url, data?)
 
 // 发起 DELETE 请求，data 是可选的参数对象
-const { data:res } = wx.$http.delete(url, data?)
+const { data:res } = al.$http.delete(url, data?)
 ```
 
 ### 配置请求根路径
