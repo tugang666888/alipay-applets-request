@@ -1,7 +1,7 @@
 ## 安装
 
 ```bash
-npm install @alipay-applets-request
+npm install alipay-applets-request
 ```
 
 ## 导入
@@ -27,16 +27,16 @@ al.$http = $http
 
 ```js
 // 发起 GET 请求，data 是可选的参数对象 可以使用es6解构赋值
-const { data:res } = al.$http.get(url, data?)
+const { data:res } = al.$http.get(url, data)
 
 // 发起 POST 请求，data 是可选的参数对象
-const { data:res } = al.$http.post(url, data?)
+const { data:res } = al.$http.post(url, data)
 
 // 发起 PUT 请求，data 是可选的参数对象
-const { data:res } = al.$http.put(url, data?)
+const { data:res } = al.$http.put(url, data)
 
 // 发起 DELETE 请求，data 是可选的参数对象
-const { data:res } = al.$http.delete(url, data?)
+const { data:res } = al.$http.delete(url, data)
 ```
 
 ### 配置请求根路径
